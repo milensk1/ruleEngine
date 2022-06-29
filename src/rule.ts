@@ -2,7 +2,7 @@ type Rule = {
   tableName: string;
   highNumberOfRows: Criteria;
   tableWithoutPrivateKey: Criteria;
-  privateKeyWithManyColumns: Criteria | undefined;
+  primaryKeyWithManyColumns: Criteria | undefined;
 };
 
 type Criteria = {

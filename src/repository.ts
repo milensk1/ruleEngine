@@ -67,7 +67,7 @@ const getRule = async (tableName: string): Promise<Rule | undefined> => {
       message: !hasPrimaryKeyCheck ? hasPrimaryKeyError : undefined,
     },
     // Show only if PK exists
-    privateKeyWithManyColumns: hasPrimaryKeyCheck
+    primaryKeyWithManyColumns: hasPrimaryKeyCheck
       ? {
           status: primaryKeyColumnCountCheck ? PASSED : FAILED,
           message: !primaryKeyColumnCountCheck

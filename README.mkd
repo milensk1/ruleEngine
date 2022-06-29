@@ -46,7 +46,7 @@ This endpoint returns a JSON with the following facts about the queried table
     tableName
     highNumberOfRows
     tableWithoutPrivateKey
-    privateKeyWithManyColumns - only if PK exists
+    primaryKeyWithManyColumns - only if PK exists
 
 OR an error message if a table doesn’t exist
 ```
