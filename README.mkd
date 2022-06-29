@@ -14,18 +14,15 @@ npm install
 
 ```
 npm run dev
+# add your own .env file containing CONNECTION_STRING to your DB
+OR
+# or include CONNECTION_STRING in the run command you are using
 ```
 
 ## Build TS file
 
 ```
 npm run build
-```
-
-## Run for prod
-
-```
-npm run prod
 ```
 
 ## RESTful API endpoints:
