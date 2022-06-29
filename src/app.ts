@@ -13,14 +13,13 @@ app.listen(port, function () {
 // Routes
 app.get("/facts", async (req: Request, res: Response) => {
   const query: RequestQuery = req.query;
-  let fact: Fact | undefined;
-
   if (!query?.tableName) {
     res.send("Please include tableName query parameter.");
     return;
   }
+
   try {
-    fact = await getFact(query.tableName);
+    const fact: Fact | undefined = await getFact(query.tableName);
     res.send(fact);
   } catch (error) {
     res.send("Something went wrong.");
@@ -29,14 +28,13 @@ app.get("/facts", async (req: Request, res: Response) => {
 
 app.get("/rules", async (req: Request, res: Response) => {
   const query: RequestQuery = req.query;
-  let rule: Rule | undefined;
-
   if (!query?.tableName) {
     res.send("Please include tableName query parameter.");
     return;
   }
+
   try {
-    rule = await getRule(query.tableName);
+    const rule: Rule | undefined = await getRule(query.tableName);
     res.send(rule);
   } catch (error) {
     res.send("Something went wrong.");
