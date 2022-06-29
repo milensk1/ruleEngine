@@ -1,8 +1,6 @@
-# Express with Typescript
+# DB Fact / Rule engine using Express.js with Typescript
 
-This repo is linked to this article https://dev.to/codeozz/express-with-typescript-starter-explained-fast-4dn7
-
-It's a very basic repo for people that want to start their own Express server supporting NodeJs
+A very minimal server app returning information for arbitrary table name on a given DB connection
 
 ## Install
 
@@ -37,7 +35,7 @@ This endpoint returns a JSON with the following facts about the queried table
     numberOfIndexes
     hasPrimaryKey
     primaryKeyColumnCount - only if PK exists
-OR an error message if a table doesn’t exist in the storage
+OR an error message if a table doesn’t exist
 ```
 
 ```
@@ -50,5 +48,5 @@ This endpoint returns a JSON with the following facts about the queried table
     tableWithoutPrivateKey
     privateKeyWithManyColumns - only if PK exists
 
-OR an error message if a table doesn’t exist in the storage
+OR an error message if a table doesn’t exist
 ```
