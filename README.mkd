@@ -45,7 +45,7 @@ consume like http://localhost:3001/rules?tableName=Grades
 This endpoint returns a JSON with the following facts about the queried table
     tableName
     highNumberOfRows
-    tableWithoutPrivateKey
+    tableWithoutPrimaryKey
     primaryKeyWithManyColumns - only if PK exists
 
 OR an error message if a table doesn’t exist

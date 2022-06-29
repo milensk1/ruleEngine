@@ -1,7 +1,7 @@
 type Rule = {
   tableName: string;
   highNumberOfRows: Criteria;
-  tableWithoutPrivateKey: Criteria;
+  tableWithoutPrimaryKey: Criteria;
   primaryKeyWithManyColumns: Criteria | undefined;
 };
 

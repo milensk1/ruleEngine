@@ -62,7 +62,7 @@ const getRule = async (tableName: string): Promise<Rule | undefined> => {
       status: numberOfRowsCheck ? PASSED : FAILED,
       message: !numberOfRowsCheck ? numberOfRowsError : undefined,
     },
-    tableWithoutPrivateKey: {
+    tableWithoutPrimaryKey: {
       status: hasPrimaryKeyCheck ? PASSED : FAILED,
       message: !hasPrimaryKeyCheck ? hasPrimaryKeyError : undefined,
     },
