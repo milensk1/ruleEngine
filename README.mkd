@@ -15,7 +15,7 @@ npm install
 ```
 npm run dev
 # add your own .env file containing CONNECTION_STRING to your DB
-OR
+# OR
 # or include CONNECTION_STRING in the run command you are using
 ```
 
